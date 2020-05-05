@@ -5,10 +5,14 @@ var objeto = JSON.parse(user);
 var frase = "Hi, my name is";
 var variavel = objeto.nome;
 
-text = "<div class='card'>"
+text3 = "<div>"
           +"<img class='img' src='."+objeto.foto+"''  style='width:20%'/>"
+          +" </div>"
+    img = document.getElementById("img");
+    img.innerHTML = text3; 
 
-          +"<div class='icons'>"
+    text = "<div>"
+            +"<div class='icons'>"
             +"<i id='nome' class='far fa-user w3-xxlarge '></i>"
             +"<i id='mail' class='far fa-envelope w3-xxlarge'></i>"
             +"<i id='aniversario' class='far fa-calendar-alt w3-xxlarge'></i>"
@@ -16,6 +20,7 @@ text = "<div class='card'>"
             +"<i id='phone' class='fas fa-phone w3-xxlarge'></i>"
             +"<i id='situacao' class='fas fa-key w3-xxlarge'></i>"
           +"</div>"
+      +"</div>"
 function criarVariavel(frase, variavel){
 text2 = "<div>"
             +"<p class='label'>"+frase+"</p>"
@@ -24,7 +29,7 @@ text2 = "<div>"
 info = document.getElementById("info");
 info.innerHTML = text2;
 }
-      +"</div>"
+     
 html = document.getElementById("html");
       html.innerHTML = text; 
 

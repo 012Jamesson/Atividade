@@ -52,7 +52,7 @@ body{
   font-size: large;
 }
 .toolbar{
-  position: static;
+  position: relative;
   background: #2d3d4d;  
   width: 100%;
 }
