@@ -5,33 +5,32 @@ var objeto = JSON.parse(user);
 var frase = "Hi, my name is";
 var variavel = objeto.nome;
 
-text3 = "<div>"
+text = "<div>"
           +"<img class='img' src='."+objeto.foto+"''  style='width:20%'/>"
           +" </div>"
     img = document.getElementById("img");
-    img.innerHTML = text3; 
+    img.innerHTML = text; 
 
-    text = "<div>"
-            +"<div class='icons'>"
-            +"<i id='nome' class='far fa-user w3-xxlarge '></i>"
-            +"<i id='mail' class='far fa-envelope w3-xxlarge'></i>"
-            +"<i id='aniversario' class='far fa-calendar-alt w3-xxlarge'></i>"
-            +"<i id='endereco' class='fas fa-map-marked-alt w3-xxlarge'></i>"
-            +"<i id='phone' class='fas fa-phone w3-xxlarge'></i>"
-            +"<i id='situacao' class='fas fa-key w3-xxlarge'></i>"
-          +"</div>"
-      +"</div>"
-function criarVariavel(frase, variavel){
 text2 = "<div>"
+        +"<div class='icons'>"
+        +"<i id='nome' class='far fa-user w3-xxlarge '></i>"
+        +"<i id='mail' class='far fa-envelope w3-xxlarge'></i>"
+        +"<i id='aniversario' class='far fa-calendar-alt w3-xxlarge'></i>"
+        +"<i id='endereco' class='fas fa-map-marked-alt w3-xxlarge'></i>"
+        +"<i id='phone' class='fas fa-phone w3-xxlarge'></i>"
+        +"<i id='situacao' class='fas fa-key w3-xxlarge'></i>"
+      +"</div>"
+  +"</div>"
+  html = document.getElementById("html");
+      html.innerHTML = text2; 
+function criarVariavel(frase, variavel){
+text3 = "<div>"
             +"<p class='label'>"+frase+"</p>"
             +"<h4 class='variavel'><b>"+variavel+"</b></h4>"
         +"</div>"
 info = document.getElementById("info");
-info.innerHTML = text2;
-}
-     
-html = document.getElementById("html");
-      html.innerHTML = text; 
+info.innerHTML = text3;
+} 
 
       var nome = document.getElementById("nome");
       var mail = document.getElementById("mail");
