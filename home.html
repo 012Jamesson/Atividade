@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head >
+   <link href="./home.page.css" rel="stylesheet"/>
+   <script defer src="./home.js"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <nav class="toolbar">
+    <img  class="logo" src="./img/logo.png">
+    <input id="filtro" placeholder="Buscar"  onkeyup="filtro()" ></input>
+    <img  class="user" src="./img/userimg.png" />
+  </nav>
+</head>
+
+<body  onload="filtroTodos()" class="acontent">
+<div>
+  <div class="sidenav">
+    <br/>
+    <label id="todos" onclick="filtroTodos()" class="label" style=" margin-left: 8%">
+      <i  class="fas fa-border-none" ></i> &nbsp;
+        Todos
+    </label>
+    <br/>
+    <br/>
+    <label id="atendidos" onclick="filtroAtendidos()" class="label" style="margin-left: 8%">
+      <i  class="fas fa-check-double"></i> &nbsp;
+        Atendidos
+    </label>
+  <br/>
+  <br/>
+    <label  id="lixeira" onclick="filtroLixeira()" class="label" style="margin-left: 8%">
+      <i  class="fas fa-trash-alt"></i> &nbsp;
+        Lixeira
+    </label>
+  </div>
+  <div class="card" >
+     <label id="html"></label>  
+  </div>
+</div>
+</body>

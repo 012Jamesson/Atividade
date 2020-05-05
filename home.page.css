@@ -1,0 +1,99 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.card{
+  position: initial;
+  width: 80%;
+  margin-top: 3%;
+  margin-right: 3%;
+  background: #ffffff;
+  box-shadow: 5px 5px 4px #bbb6b6;
+  float: right;
+}
+.item{
+  border-color: #e6e6e6;
+  box-shadow: 5px 5px 4px #bbb6b6;
+  width: 100%;
+}
+.menu{
+  width: 15%;
+  height: 100%;
+}
+.logo{
+  position: block;
+  width: 7%;
+  margin-left: 1%;
+}
+.user{
+  position: block;
+  float: right;
+  width: 65px;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+.search {
+  width: 60%;
+}
+#filtro{
+  position: absolute;
+   margin-top: auto;
+  outline: none;
+  width: 60%;
+  height: 45px;
+  margin: 2% 10% 0% 10%;
+  border-radius: 36px;
+}
+#filtro::-webkit-input-placeholder{
+  color:#2c3e50;
+  font-weight: 600;
+  font-size: large;
+}
+.toolbar{
+  position: relative;
+  background: #2d3d4d;  
+  width: 100%;
+}
+.acontent{
+  background:#f9f9f9;
+}
+.foto{
+  border-radius: 50%;
+  width: 50px;
+  margin-left: 5%;
+}
+.list{
+  background: #ffffff;
+  border-color: #e6e6e6;
+  box-shadow: 2px 2px 1px #bbb6b6;
+}
+.sidenav{
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 15%;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 4px #bbb6b6;
+  float: left;
+  color:#858b8f;
+}
+.a{
+  text-decoration:none;
+  color:#858b8f;
+  font-weight: bold;
+}
+#todos{
+  font-size: x-large;
+}
+#atendidos{
+  font-size: x-large;
+}
+#lixeira{
+  font-size: x-large;
+}
+.email{
+  padding: 2%;
+}
