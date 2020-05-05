@@ -4,9 +4,10 @@ body{
   padding: 0;
   text-decoration: none;
   list-style: none;
+  display: grid;
 }
 .card{
-  position: initial;
+  position: static;
   width: 80%;
   margin-top: 3%;
   margin-right: 3%;
@@ -35,10 +36,8 @@ body{
   margin-top: 2%;
   margin-right: 3%;
 }
-.search {
-  width: 60%;
-}
 #filtro{
+  position: block;
   position: absolute;
    margin-top: auto;
   outline: none;
@@ -53,7 +52,7 @@ body{
   font-size: large;
 }
 .toolbar{
-  position: relative;
+  position: static;
   background: #2d3d4d;  
   width: 100%;
 }
