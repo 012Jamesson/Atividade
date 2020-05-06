@@ -6,7 +6,7 @@ var frase = "Hi, my name is";
 var variavel = objeto.nome;
 
 text = "<div>"
-          +"<img class='img' src='."+objeto.foto+"''  style='width:20%'/>"
+          +"<img class='img' src='."+objeto.foto+"''/>"
           +" </div>"
     img = document.getElementById("img");
     img.innerHTML = text; 
@@ -26,7 +26,7 @@ text2 = "<div>"
 function criarVariavel(frase, variavel){
 text3 = "<div>"
             +"<p class='label'>"+frase+"</p>"
-            +"<h4 class='variavel'><b>"+variavel+"</b></h4>"
+            +"<p class='variavel'>"+variavel+"</p>"
         +"</div>"
 info = document.getElementById("info");
 info.innerHTML = text3;

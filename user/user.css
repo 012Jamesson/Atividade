@@ -1,5 +1,3 @@
-
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
@@ -11,7 +9,8 @@ body{
     width: 60%;
     margin:auto;
     margin-top: 5%;
-    background: no-repeat linear-gradient( #e6e6e6 220px, #858b8f 2px, #ffffff 222px); 
+    background: no-repeat linear-gradient( #e6e6e6 30%, #858b8f 1%, #ffffff 31%); 
+    background-attachment: unset;
     border-radius: 12px;
     align-content: center;
 }
@@ -19,9 +18,15 @@ body{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 .img {    
+    padding: 60px;
+    display: block;
+    width:350px;
+    max-width: 100%;
     margin-top: 10%;
     border-radius: 200%;
-    margin-left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     border-color: #858b8f;
 }
 .label {
@@ -36,6 +41,7 @@ body{
     color: #2c3e50;
     font-size: xx-large;
     font-weight: bold;
+    word-wrap: break-word
 }
 .back{  
     background: no-repeat linear-gradient( #2c3e50 55%, #f4f4f4 45%); 
@@ -57,13 +63,14 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(5px, 80px));
     grid-template-rows: auto;
     justify-content: center;
+    align-content: center;
     margin-top: 5%;
-    padding: 4%;
     padding-bottom: 10%;
     color:#858b8f;
 }
 .icons i{
-    width: 7%; height:2px;
     margin-bottom: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10%;
+    justify-content: center;
+    margin: auto;
 }

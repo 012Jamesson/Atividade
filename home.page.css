@@ -7,9 +7,9 @@ body{
   display: grid;
 }
 .card{
-  position: static;
+  position: relative;
   width: 80%;
-  margin-top: 3%;
+  margin-top: 150px;
   margin-right: 3%;
   background: #ffffff;
   box-shadow: 5px 5px 4px #bbb6b6;
@@ -25,25 +25,24 @@ body{
   height: 100%;
 }
 .logo{
-  position: block;
-  width: 7%;
+  position: relative;
+  width: 125px;
   margin-left: 1%;
 }
 .user{
-  position: block;
+  position: relative;
   float: right;
   width: 65px;
-  margin-top: 2%;
-  margin-right: 3%;
+  margin-top: 25px;
 }
 #filtro{
-  position: block;
-  position: absolute;
-   margin-top: auto;
+  justify-self: center;
+  position: relative;
+  margin-top: auto;
   outline: none;
-  width: 60%;
+  width: 80%;
   height: 45px;
-  margin: 2% 10% 0% 10%;
+  margin: 30px 0% 0% 15px;
   border-radius: 36px;
 }
 #filtro::-webkit-input-placeholder{
@@ -52,7 +51,9 @@ body{
   font-size: large;
 }
 .toolbar{
-  position: relative;
+  grid-template-columns: repeat(3, 12% 76% 12%);
+  display: grid;
+  position: fixed;
   background: #2d3d4d;  
   width: 100%;
 }
@@ -70,8 +71,8 @@ body{
   box-shadow: 2px 2px 1px #bbb6b6;
 }
 .sidenav{
+  margin-top: 130px;
   position: fixed;
-  display: block;
   height: 100%;
   width: 15%;
   background-color: #ffffff;
