@@ -5,15 +5,17 @@ body{
   text-decoration: none;
   list-style: none;
   display: grid;
+  background:#f9f9f9;
 }
 .card{
   position: relative;
   width: 80%;
   margin-top: 150px;
   margin-right: 3%;
+  margin-left: 18%;
   background: #ffffff;
   box-shadow: 5px 5px 4px #bbb6b6;
-  float: right;
+  float:left;
 }
 .item{
   border-color: #e6e6e6;
@@ -51,14 +53,12 @@ body{
   font-size: large;
 }
 .toolbar{
+  z-index: 1;
   grid-template-columns: repeat(3, 12% 76% 12%);
   display: grid;
   position: fixed;
   background: #2d3d4d;  
   width: 100%;
-}
-.acontent{
-  background:#f9f9f9;
 }
 .foto{
   border-radius: 50%;
@@ -71,6 +71,9 @@ body{
   box-shadow: 2px 2px 1px #bbb6b6;
 }
 .sidenav{
+  display: grid;
+  grid-template-rows:  5% 5% 5%;
+  grid-template-columns: 100%;
   margin-top: 130px;
   position: fixed;
   height: 100%;
@@ -79,6 +82,9 @@ body{
   box-shadow: 5px 5px 4px #bbb6b6;
   float: left;
   color:#858b8f;
+  text-align: center;
+  white-space: nowrap; 
+  justify-content: center;
 }
 .a{
   text-decoration:none;
@@ -86,14 +92,57 @@ body{
   font-weight: bold;
 }
 #todos{
-  font-size: x-large;
+  margin-top: 10%;
+  position: flex;
+  font-size: large;
+  margin-right: 10%;
 }
 #atendidos{
-  font-size: x-large;
+  display: block;
+  position: static;
+  margin-top: 10%;
+  font-size: large;
 }
 #lixeira{
-  font-size: x-large;
+  position: flex;
+  margin-top: 10%;
+  font-size: large;
+  margin-right: 10%;
 }
 .email{
   padding: 2%;
+}
+.nome{
+  font-weight: bold;
+}
+.list td{
+  color:  #ababab;
+}
+.list i{
+  padding: 6%;
+  width: 20%;
+}
+.tdimg{
+  tab-size: 1px;
+}
+.select{
+  color:#aeba4e;
+}
+.noSelect{
+  color: #858b8f
+}
+.popup{
+  display: none;
+}
+.showpopup{
+  z-index: 1;
+  position: absolute;
+  top:150px;
+  width: 250px;
+  height: 80px;
+  opacity: 0.9;
+  background-color: rgb(42, 218, 42);
+  display: block;
+  float: right;
+  margin-left: 80%;
 }

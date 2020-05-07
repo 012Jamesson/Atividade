@@ -1,13 +1,13 @@
 var url = window.location.href; 
 var parametroDaUrl = url.split("?")[1];
-user = sessionStorage.getItem(parametroDaUrl)
+var user = sessionStorage.getItem(parametroDaUrl)
 var objeto = JSON.parse(user);
 var frase = "Hi, my name is";
 var variavel = objeto.nome;
 
 text = "<div>"
           +"<img class='img' src='."+objeto.foto+"''/>"
-          +" </div>"
+     +" </div>"
     img = document.getElementById("img");
     img.innerHTML = text; 
 
@@ -32,74 +32,74 @@ info = document.getElementById("info");
 info.innerHTML = text3;
 } 
 
-      var nome = document.getElementById("nome");
-      var mail = document.getElementById("mail");
-      var aniversario = document.getElementById("aniversario");
-      var phone = document.getElementById("phone");
-      var situacao = document.getElementById("situacao");
+var nome = document.getElementById("nome");
+var mail = document.getElementById("mail");
+var aniversario = document.getElementById("aniversario");
+var phone = document.getElementById("phone");
+var situacao = document.getElementById("situacao");
  
-      nome.addEventListener("mouseenter", function ( event) {   
-        frase = "Hi, my name is";
-        variavel = objeto.nome;
-      
-        event.target.style.color = "#aeba4e";
-        criarVariavel(frase, variavel)
-        nome.addEventListener("mouseleave", function( event) {
-            event.target.style.color = "#858b8f";
-          }, );
-      }, false);
-      
-      mail.addEventListener("mouseover", function( event) {   
-        frase = "My email address is";
-        variavel = objeto.email;
-      
-        event.target.style.color = "#aeba4e";
-        criarVariavel(frase, variavel)
-        mail.addEventListener("mouseleave", function( event) { 
-            event.target.style.color = "#858b8f";
-          }, );   
-      }, false);
-        
-      aniversario.addEventListener("mouseover", function( event) {   
-        frase = "My birthday is";
-        variavel = objeto.dataNascimento;
-    
-        event.target.style.color = "#aeba4e";
-        criarVariavel(frase, variavel)
-        aniversario.addEventListener("mouseleave", function( event) { 
-            event.target.style.color = "#858b8f";
-          }, );
-      }, false);
+nome.addEventListener("mouseenter", function ( event) {   
+  frase = "Hi, my name is";
+  variavel = objeto.nome;
+
+  event.target.style.color = "#aeba4e";
+  criarVariavel(frase, variavel)
+  nome.addEventListener("mouseleave", function( event) {
+      event.target.style.color = "#858b8f";
+    }, );
+}, false);
+
+mail.addEventListener("mouseover", function( event) {   
+  frase = "My email address is";
+  variavel = objeto.email;
+
+  event.target.style.color = "#aeba4e";
+  criarVariavel(frase, variavel)
+  mail.addEventListener("mouseleave", function( event) { 
+      event.target.style.color = "#858b8f";
+    }, );   
+}, false);
   
-      phone.addEventListener("mouseover", function( event) {   
-        frase = "My phone number is";
-        variavel = objeto.telefone;
-    
-        event.target.style.color = "#aeba4e";
-        criarVariavel(frase, variavel)
-        phone.addEventListener("mouseleave", function( event) { 
-            event.target.style.color = "#858b8f";
-          }, );
-      }, false);
+aniversario.addEventListener("mouseover", function( event) {   
+  frase = "My birthday is";
+  variavel = objeto.dataNascimento;
 
-      endereco.addEventListener("mouseover", function( event) {   
-        frase = "My address is";
-        variavel = objeto.cidade;
-    
-        event.target.style.color = "#aeba4e";
-        criarVariavel(frase, variavel)
-        endereco.addEventListener("mouseleave", function( event) {   
-            event.target.style.color = "#858b8f";
-          }, );
-      }, false);
+  event.target.style.color = "#aeba4e";
+  criarVariavel(frase, variavel)
+  aniversario.addEventListener("mouseleave", function( event) { 
+      event.target.style.color = "#858b8f";
+    }, );
+}, false);
 
-      situacao.addEventListener("mouseover", function( event) {   
-        frase = "My password is";
-        variavel = objeto.situacao;
-    
-        event.target.style.color = "#aeba4e";
-        criarVariavel(frase, variavel)
-        situacao.addEventListener("mouseleave", function( event) {  
-            event.target.style.color = "#858b8f";
-          }, );
-      }, false);
+phone.addEventListener("mouseover", function( event) {   
+  frase = "My phone number is";
+  variavel = objeto.telefone;
+
+  event.target.style.color = "#aeba4e";
+  criarVariavel(frase, variavel)
+  phone.addEventListener("mouseleave", function( event) { 
+      event.target.style.color = "#858b8f";
+    }, );
+}, false);
+
+endereco.addEventListener("mouseover", function( event) {   
+  frase = "My address is";
+  variavel = objeto.cidade;
+
+  event.target.style.color = "#aeba4e";
+  criarVariavel(frase, variavel)
+  endereco.addEventListener("mouseleave", function( event) {   
+      event.target.style.color = "#858b8f";
+    }, );
+}, false);
+
+situacao.addEventListener("mouseover", function( event) {   
+  frase = "My password is";
+  variavel = objeto.situacao;
+
+  event.target.style.color = "#aeba4e";
+  criarVariavel(frase, variavel)
+  situacao.addEventListener("mouseleave", function( event) {  
+      event.target.style.color = "#858b8f";
+    }, );
+}, false);

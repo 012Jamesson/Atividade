@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head >
+<head>
    <link href="./home.page.css" rel="stylesheet"/>
    <script defer src="./home.js"></script>
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+   <link href="./arquivos/font/css/all.css" rel="stylesheet"/>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div class="toolbar">
-    <img  class="logo" src="./img/logo.png">
-    <input id="filtro" placeholder="Buscar"  onkeyup="filtro()" ></input>
-    <img  class="user" src="./img/userimg.png" />
-  </div>
 </head>
-
-<body  onload="filtroTodos()" class="acontent">
-<div>
+<body  onload="filtroTodos()">
+  <header class="toolbar">
+    <img  class="logo" src="./img/logo.png" alt="Logo">
+    <input id="filtro" placeholder="Buscar"  onkeyup="filtro()"/>
+    <img  class="user" src="./img/userimg.png" alt="icone user" />
+  </header>
+  <label id="showPopup"></label> 
   <div class="sidenav">
-    <br/>
-    <label id="todos" onclick="filtroTodos()" class="label" style=" margin-left: 8%;">
-      <i  class="fas fa-border-none" ></i> &nbsp;
+    <label id="todos" onclick="filtroTodos()">
+      <i class="fas fa-border-none" ></i> 
         Todos
     </label>
-    <br/>
-    <br/>
-    <label id="atendidos" onclick="filtroAtendidos()" class="label" style="margin-left: 8%">
-      <i  class="fas fa-check-double"></i> &nbsp;
+    
+    <label id="atendidos" onclick="filtroAtendidos()">
+      <i  class="fas fa-check-double"></i> 
         Atendidos
     </label>
-  <br/>
-  <br/>
-    <label  id="lixeira" onclick="filtroLixeira()" class="label" style="margin-left: 8%">
-      <i  class="fas fa-trash-alt"></i> &nbsp;
+  
+    <label  id="lixeira" onclick="filtroLixeira()" >
+      <i  class="fas fa-trash-alt"></i> 
         Lixeira
     </label>
   </div>
   <div class="card" >
      <label id="html"></label>  
   </div>
-</div>
 </body>
