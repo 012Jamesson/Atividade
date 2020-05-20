@@ -38,15 +38,15 @@ function carregarUsers(temporalUsers) {
 
   text = "<table  class='card-item-user'>";
   temporalUsers.forEach((user) => {
-  if(temporalUsers === users){
-    if (user.situacao === 'Lixeira') {
-      iconLixeira = 'select-icon';
-      iconAtendidos = 'noSelect-icon';
-    } else {
-      iconAtendidos = 'select-icon';
-      iconLixeira = 'noSelect-icon';
+    if (temporalUsers === users) {
+      if (user.situacao === 'Lixeira') {
+        iconLixeira = 'select-icon';
+        iconAtendidos = 'noSelect-icon';
+      } else {
+        iconAtendidos = 'select-icon';
+        iconLixeira = 'noSelect-icon';
+      }
     }
-  }
     text += "<tr class='list-users'> ";
     text += "<td class='user-foto-tab'>" + "<img  class='user-foto'   src= ' " + user.foto + "' alt='Icone user'/>" + "</td>";
     text += "<td class='user-nome'; onClick='pegarUsuario(" + user.id + ")'><a class='link' href='./user/user.html?" + user.id + "'/>" + user.nome + "</td>";
