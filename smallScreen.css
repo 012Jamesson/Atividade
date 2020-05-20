@@ -1,0 +1,44 @@
+.card-users{
+  display: block;
+  position: sticky;
+  width: 90%;
+  margin-top: 150px;
+  margin-right: 3%;
+  margin-left: 10%;
+  background: #ffffff;
+  box-shadow: 2px 2px 2px 1px #bbb6b6;
+}
+.sidenav{
+   width: 20%;
+   min-width: 25%;
+   max-width: 85px;
+   z-index: 1;
+}
+.sidenav-fechado{
+  position: fixed;
+  width: 50px;
+  min-width: 50px;
+  text-align: center;
+  margin-top: 90px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 4px #bbb6b6;
+  color:#858b8f;
+  white-space: nowrap; 
+  box-shadow: 0;
+}
+.button-menu{
+  display: block;
+  font-size: 1.3em;
+  align-self: center;
+  width: 100%;
+  color: #2d3d4d;
+  padding: 5%;
+  background-color: #ffffff;
+  border-color: rgba(85, 85, 85, 0.274);
+  outline: none;
+  border-width: 1px;
+}
+.menu-option-fechado{
+  display: none;
+}
